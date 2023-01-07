@@ -99,7 +99,7 @@
               <li class="nav-item">
                 <a href="../tables/kendaraan.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Daftar Kendaraan</p>
+                  <p>Kelola Kendaraan</p>
                 </a>
               </li>
             </li>
@@ -123,7 +123,7 @@
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="/page1/index.html">Home</a></li>
               <li class="breadcrumb-item"><a href="/AdminLTE-master/admin.html">Admin</a></li>
-              <li class="breadcrumb-item active">Daftar Kendaraan</li>
+              <li class="breadcrumb-item active">Kelola Kendaraan</li>
             </ol>
           </div>
         </div>
@@ -131,70 +131,72 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Daftar Kendaraan</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                  <tr>
-                    <th>No</th>
-                    <th>Nama Kendaraan</th>
-                    <th>Lama Pinjaman</th>
-                    <th>Vasilitas</th>
-                    <th>Action</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Avanza Veloz Mt</td>
-                      <td>5 Hari</td>
-                      <td><span class="tag tag-success">8 Kursi  2x2 Wifi Bagasi Luas</span></td>
-                      <td>Peminjaman Kendaraan.</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>New Alphard</td>
-                      <td>2 Hari</td>
-                      <td><span class="tag tag-warning">8 Kursi  2x2 Wifi</span></td>
-                      <td>Peminjaman Kendaraan.</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>New Sienta</td>
-                      <td>3 Hari</td>
-                      <td><span class="tag tag-primary">5 Kursi  2x2 Wifi Bagasi Luas</span></td>
-                      <td>Peminjaman Kendaraan.</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Sigra</td>
-                      <td>7 Hari</td>
-                      <td><span class="tag tag-danger">8 Kursi  2x2 Wifi</span></td>
-                      <td>Peminjaman Kendaraan.</td>
-                    </tr>
-                    <tr>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-            <!-- /.card -->
-          </div>
-          <!-- /.col -->
+    <div class="card card-info">
+        <div class="card-header">
+          <h3 class="card-title">Kelola Kendaraan</h3>
         </div>
-        <!-- /.row -->
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form class="form-horizontal">
+          <div class="card-body">
+            <div class="form-group row">
+              <label for="kelola" class="col-sm-2 col-form-label">Nama Kendaraan</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="kelola" placeholder="Masukan Nama Kendaraan">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="kebutuhan" class="col-sm-2 col-form-label">Kebutuhan :</label>
+              <div class="col-sm-10">
+                <select id="cars">
+                    <option value="pribadi">Pribadi</option>
+                    <option value="perusahaan">Perusahaan</option>
+                  </select>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi Kendaraan</label>
+                <div class="col-sm-10">
+                <textarea rows="4" cols="50" placeholder="Masukan Deskripsi kendaraan..."></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="deskripsi" class="col-sm-2 col-form-label">Fasilitas Kendaraan</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Supir</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Free Snack</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Car Seat</label>
+              </div>
+            </div>
+            <div class="form-group row">
+               <label for="kelola" class="col-sm-2 col-form-label">Kapasitas</label>
+            <div class="col-sm-4">
+               <input type="number" class="form-control" id="kelola" placeholder="Masukan Kapasitas">
+              </div>
+              </div>
+              <div class="form-group row">
+                <label for="kelola" class="col-sm-2 col-form-label">Merk Kendaraan</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="kelola" placeholder="Masukan Merk Kendaraan">
+                </div>
+              </div>
+              </div>
+          </div>
+          <!-- /.card-body -->
+          <div class="card-footer">
+            <button type="submit" class="btn btn-info">Save</button>
+            <button type="reset" class="btn btn-light">Reset</button>
+          </div>
+          <!-- /.card-footer -->
+        </form>
       </div>
-      <!-- /.container-fluid -->
-    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
