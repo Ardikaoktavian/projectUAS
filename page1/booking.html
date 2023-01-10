@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="icon" type="image/x-icon" href="asset/image/shiva.jpeg" />
+    <title>Booking |  Shiva Rent</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <style>
+        /* Style the list */
+        ul.breadcrumb {
+          padding-left: 86%;
+          padding-top: 0%;
+          list-style: none;
+          background-color: transparent;
+          text-align: center;
+        }
+        
+        /* Display list items side by side */
+        ul.breadcrumb li {
+          display: inline;
+          font-size: 18px;
+        }
+        
+        /* Add a slash symbol (/) before/behind each list item */
+        ul.breadcrumb li+li:before {
+          padding: 8px;
+          color: black;
+          content: "/\00a0";
+        }
+        
+        /* Add a color to all links inside the list */
+        ul.breadcrumb li a {
+          color: #0275d8;
+          text-decoration: none;
+        }
+        
+        /* Add a color on mouse-over */
+        ul.breadcrumb li a:hover {
+          color: blue;
+          text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>    
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">				 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="fname">Rental</div>
+            <div class="lname">Shiva</div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                         <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="unit.html">Unit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/page1/booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/page1/team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/AdminLTE-master/admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto" action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button class="btn btn-outline-danger" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <a class="btn btn-danger" href="/Frontend Login/login.html" target="">Login</a>
+            </div>
+        </nav>
+        <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Booking Kendaraan</h3>
+                <ul class="breadcrumb">
+                    <li><a href="/page1/index.html">Home</a></li>
+                    <li>Booking</li>
+                  </ul>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                  <form role="form">
+                    <div class="form-group">
+                      <div class="form-group row">
+                                    <label for="text" class="col-4 col-form-label"> Pilih Kendaraan </label> 
+                                    <div class="col-8">
+                                        <select name="kendaraan">
+                                            <option value="avanza velo">Avanza veloz</option>
+                                            <option value="new alphard">New alphard</option>
+                                            <option value="new rush">New Rush</option>
+                                            <option value="terios">Terios</option>
+                                            <option value="xenia">Xenia</option>
+                                            <option value="sigra">Sigra</option>
+                                        </select>
+                                    </div>
+                                  </div>
+            
+                                  <div class="form-group row">
+                                    <label for="text" class="col-4 col-form-label"> Nama Peminjam </label> 
+                                    <div class="col-8">
+                                      <input id="text1" name="text" type="text" class="form-control" placeholder="Isi Nama Peminjam">
+                                    </div>
+                                  </div>
+            
+                                  <div class="form-group row">
+                                    <label for="text5" class="col-4 col-form-label"> Kategori Peminjaman </label> 
+                                    <div class="col-8">
+                                        <label><input type="radio" name="kategori-peminjaman" value="pribadi" /> Pribadi</label>
+                                        <label><input type="radio" name="kategori-peminjaman" value="perusahaan/organisasi" /> Perusahaan/Organisasi</label>
+                                    </div>
+                                  </div>
+            
+                                  <div class="form-group row">
+                                    <label for="textarea" class="col-4 col-form-label"> Deskripsi Kebutuhan </label> 
+                                    <div class="col-8">
+                                      <textarea id="textarea" name="textarea" cols="30" rows="5" class="form-control" placeholder="Isi Deskripsi"></textarea>
+                                    </div>
+                                  </div>
+            
+                                  <div class="form-group row">
+                                    <label for="taxt" class="col-4 col-form-label"> Tanggal Pinjam </label> 
+                                    <div class="col-8">
+                                        <input type="date" name="tglPinjam" placeholder="isi Pinjam" />
+                                    </div>
+                                  </div>
+            
+                                  <div class="form-group row">
+                                    <label for="text5" class="col-4 col-form-label"> Kontak Person </label> 
+                                    <div class="col-8">
+                                      <input id="text5" name="text5" type="text" class="form-control" placeholder="Isi Kontak Person">
+                                    </div>
+                                  </div>
+            
+                                  <div class="form-group row">
+                                    <label for="text2" class="col-4 col-form-label"> Telpon/Hp </label> 
+                                    <div class="col-8">
+                                      <input id="text2" name="text2" placeholder="Isi Nomor Telpon" type="number" class="form-control">
+                                    </div>
+                                  </div>
+            
+                                  <div class="form-group row">
+                                    <label for="text3" class="col-4 col-form-label"> E-mail </label> 
+                                    <div class="col-8">
+                                      <input id="text3" name="text3" type="text" class="form-control" placeholder="Isi E-mail">
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group row">
+                                    <div class="offset-4 col-8">
+                                      <a class="btn btn-primary" href="/page1/validasi.html" target="">Submit</a>
+                                      <button name="reset" type="reset" class="btn btn-primary">Reset</button>
+                                    </div>
+                                  </div>
+                          </div>
+                    </form>
+                  </div>
+                      <!-- /.row -->
+                    </div><!-- /.container-fluid -->
+                </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+                <!--footer-->
+                <div class="footer-dark">
+                    <footer>
+                        <div class="fcontainer">
+                            <div class="row">   
+                                </div>
+                                <h2 style="text-align: center;">Our Social Media</h2>
+                                <div class="col item social"><a href="https://web.facebook.com/STTTerpaduNF/" target="_blank">
+                                        <i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/STTTerpaduNF1">
+                                        <i class="icon ion-social-twitter"></i></a><a href="https://github.com/Ardikaoktavian/projectUAS">
+                                        <i class="icon ion-social-github"></i></a><a href="https://www.instagram.com/sttterpadunf/?hl=id">
+                                        <i class="icon ion-social-instagram"></i></a>
+                                </div>                            
+                            </div>
+                            <p class="copyright">Develop By Mahasiswa <strong>STT Terpadu Nurul Fikri</strong> © 2023</p>
+                        </div>
+                    </footer>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
